@@ -1,0 +1,7 @@
+include dcc/dcc.min.js
+include dcc/dcc.min.js.map
+include dcc/metadata.json
+include dcc/package-info.json
+include README.md
+include LICENSE
+include package.json
