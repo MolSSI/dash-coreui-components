@@ -16,8 +16,11 @@
   "author": "yuwei <yuweix@vt.edu>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "react-onclickout": "^2.0.8",
+    "reactstrap": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",

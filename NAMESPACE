@@ -1,7 +1,11 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
+export(''appasidetoggler)
 export(''appfooter)
 export(''appheader)
+export(''appheaderdropdown)
 export(''appnavbarbrand)
+export(''appsidebar)
+export(''appsidebarheader)
 export(''appsidebartoggler)
 export(''firstapp)
