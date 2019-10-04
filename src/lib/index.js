@@ -8,6 +8,12 @@ import appheaderdropdown from './components/appheaderdropdown.react';
 import appasidetoggler from './components/appasidetoggler.react';
 import appsidebar from './components/appsidebar.react';
 import appsidebarheader from './components/appsidebarheader.react';
+import appsidebarform from './components/appsidebarform.react';
+import appsidebarnav from './components/appsidebarnav.react';
+import appsidebarfooter from './components/appsidebarfooter.react';
+import appbreadcrumb from './components/appbreadcrumb.react';
+import approuteconditional from './components/approuteconditional.react';
+import appcard from './components/appcard.react';
 
 export {
     appheader,
@@ -18,5 +24,11 @@ export {
     appheaderdropdown,
     appasidetoggler,
     appsidebar,
-    appsidebarheader
+    appsidebarheader,
+    appsidebarform,
+    appsidebarnav,
+    appsidebarfooter,
+    appbreadcrumb,
+    approuteconditional,
+    appcard
 };

@@ -119,6 +119,186 @@
       }
     }
   },
+  "src/lib/components/appbreadcrumb.react.js": {
+    "description": "CoreUI breadcrumb component.",
+    "displayName": "appbreadcrumb",
+    "methods": [
+      {
+        "name": "linkClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "href",
+            "type": null
+          },
+          {
+            "name": "refresh",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getPath",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "pathname",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "breadcrumbItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "breadcrumb",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks, defaults to `appbreadcrumb`.",
+        "defaultValue": {
+          "value": "'appbreadcrumb'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS class name, defaults to `app-breadcrumb`.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "appRoutes": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "A list of dictionaries describing URL path in a human-readable way.\r\nDefaults to `[{ path: '/', name: 'Home' }]`.",
+        "defaultValue": {
+          "value": "[{ path: '/', name: 'Home' }]",
+          "computed": false
+        }
+      },
+      "tag": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The HTML tag, defaults to `div`.",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/appcard.react.js": {
+    "description": "",
+    "displayName": "appcard",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": ""
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'card'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "tag": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
   "src/lib/components/appfooter.react.js": {
     "description": "CoreUI footer component.",
     "displayName": "appfooter",
@@ -454,6 +634,77 @@
       }
     }
   },
+  "src/lib/components/approuteconditional.react.js": {
+    "description": "Route conditional component.\r\n\nThis component (and its children) are only visible if the browser's current URL matches its route prop.\r\nThis provides a light-weight client-side alternative to the server-side routing described in https://dash.plot.ly/urls.",
+    "displayName": "approuteconditional",
+    "methods": [
+      {
+        "name": "activeRoute",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "routeName",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks, defaults to `approuteconditional`.",
+        "defaultValue": {
+          "value": "'approuteconditional'",
+          "computed": false
+        }
+      },
+      "route": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The route. This component is only visible if the browser's current URL matches the contents of this prop."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS class name, defaults to `route-conditional`."
+      },
+      "tag": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The HTML tag, defaults to `div`.",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/appsidebar.react.js": {
     "description": "CoreUI sidebar component.",
     "displayName": "appsidebar",
@@ -658,6 +909,108 @@
       }
     }
   },
+  "src/lib/components/appsidebarfooter.react.js": {
+    "description": "CoreUI sidebar footer component.",
+    "displayName": "appsidebarfooter",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks, defaults to `appsidebarfooter`.",
+        "defaultValue": {
+          "value": "'appsidebarfooter'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS class name, defaults to `sidebar-footer`."
+      },
+      "tag": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The HTML tag, defaults to `div`.",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/appsidebarform.react.js": {
+    "description": "CoreUI sidebar form component.",
+    "displayName": "appsidebarform",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks, defaults to `appsidebarform`.",
+        "defaultValue": {
+          "value": "'appsidebarform'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS class name, defaults to `sidebar-form`."
+      },
+      "tag": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The HTML tag, defaults to `div`.",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/appsidebarheader.react.js": {
     "description": "CoreUI sidebar header component.",
     "displayName": "appsidebarheader",
@@ -704,6 +1057,383 @@
         "description": "The HTML tag, defaults to `div`.",
         "defaultValue": {
           "value": "'div'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/appsidebarnav.react.js": {
+    "description": "CoreUI sidebar nav component.\r\n\nThis component manages the location in a multi-page much as Dash Core Components `Location` component.\r\nIt is also compatible with the Dash Core Components `Link` component.\r\nSee https://dash.plot.ly/urls for details.",
+    "displayName": "appsidebarnav",
+    "methods": [
+      {
+        "name": "updateLocation",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "linkClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "href",
+            "type": null
+          },
+          {
+            "name": "refresh",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "dropdownClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "activeRoute",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "routeName",
+            "type": null
+          },
+          {
+            "name": "activeClasses",
+            "type": null
+          },
+          {
+            "name": "notActiveClasses",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "hideMobile",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "navList",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "items",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navType",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "idx",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navTitle",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "title",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navWrapper",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navDivider",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "divider",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navLabel",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navDropdown",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navItem",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navLink",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "item",
+            "type": null
+          },
+          {
+            "name": "key",
+            "type": null
+          },
+          {
+            "name": "classes",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "navBadge",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "badge",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "isExternal",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "url",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children, defaults to `navConfig.items`."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks, defaults to `appsidebarnav`.",
+        "defaultValue": {
+          "value": "'appsidebarnav'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS class name, defaults to `sidebar-nav`."
+      },
+      "pathname": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The pathname in window.location - e.g., \"/my/full/pathname\""
+      },
+      "search": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The search in window.location - e.g., \"?myargument=1\""
+      },
+      "hash": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The hash in window.location - e.g., \"#myhash\""
+      },
+      "href": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The href in window.location - e.g., \"/my/full/pathname?myargument=1#myhash\""
+      },
+      "refresh": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Refresh the page when the location is updated? Default to `true`.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "The setProps callback function provided by Dash iff a callback is connected."
+      },
+      "navConfig": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "The sidebar nav config, used to configure the contents of this sidebar nav.\r\nAlternatively, you can add children manually, which will cause this prop to be ignored.\r\nA sidebar nav config object has the following structure:\r\n- title:\r\n````js\r\n{\r\n  title: true,\r\n  name: 'Theme',\r\n  class: ''              // optional class names space delimited list for title item ex: \"text-center\"\r\n  wrapper: {             // optional wrapper object\r\n    element: '',         // optional* valid HTML5 element tag ( *required when passing attributes)\r\n    attributes: {}       // optional valid JS object with JS API naming ex: { className: \"my-class\", style: { fontFamily: \"Verdana\" }, id: \"my-id\"}\r\n  },\r\n},\r\n````\r\n- item:\r\n````js\r\n{\r\n  name: 'Dashboard',\r\n  url: '/dashboard',\r\n  icon: `icon-speedometer',\r\n  class: '',                    // optional\r\n  variant: 'success',           // optional\r\n  badge: {\r\n    variant: 'info',\r\n    text: 'NEW',\r\n    class: ''                   // optional\r\n  },\r\n  attributes: { target: '_blank', rel: \"noreferrer noopener\", disabled: false, hidden: false }, // (v2.1.0 up) optional valid JS object with JS API naming\r\n},\r\n````\r\n- item with `children` array - works like `nav-dropdown-toggle` with `nav-dropdown-items`\r\n````js\r\n{\r\n  name: 'Icons',\r\n  url: '/icons',\r\n  icon: 'icon-star',\r\n  children: [\r\n    {\r\n      name: 'Flags',     // item options apply\r\n      url: '/icons/flags',\r\n      icon: 'icon-star',\r\n      badge: {\r\n        variant: 'success',\r\n        text: 'NEW'\r\n      }\r\n    },\r\n  ]\r\n}\r\n````\r\n- divider:\r\n````js\r\n{\r\n  divider: true\r\n},\r\n````\r\n\r\n- order of precedence:\r\n````\r\ntitle > divider > children > item\r\n````",
+        "defaultValue": {
+          "value": "{\r\n  items: [\r\n    {\r\n      name: 'Dashboard',\r\n      url: '/dashboard',\r\n      icon: 'cui-speedometer icons',\r\n      badge: { variant: 'info', text: 'NEW' }\r\n    }]\r\n}",
+          "computed": false
+        }
+      },
+      "navFunc": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "TODO document this."
+      },
+      "isOpen": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "The isOpen flag, defaults to `false`.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "staticContext": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "TODO document this."
+      },
+      "tag": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "func"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The HTML tag, defaults to `nav`.",
+        "defaultValue": {
+          "value": "'nav'",
           "computed": false
         }
       }
