@@ -14,6 +14,9 @@ import appsidebarfooter from './components/appsidebarfooter.react';
 import appbreadcrumb from './components/appbreadcrumb.react';
 import approuteconditional from './components/approuteconditional.react';
 import appcard from './components/appcard.react';
+import applinechart from './components/applinechart.react';
+import apptableheader from './components/apptableheader.react';
+import apptablebody from './components/apptablebody.react';
 
 export {
     appheader,
@@ -30,5 +33,8 @@ export {
     appsidebarfooter,
     appbreadcrumb,
     approuteconditional,
-    appcard
+    appcard,
+    applinechart,
+    apptableheader,
+    apptablebody
 };
