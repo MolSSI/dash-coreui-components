@@ -18,7 +18,7 @@ Keyword arguments:
     def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, tag=Component.UNDEFINED, style=Component.UNDEFINED, data=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'className', 'tag', 'style', 'data']
         self._type = 'apptablebody'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['children', 'id', 'className', 'tag', 'style', 'data']
         self.available_wildcard_properties =            []

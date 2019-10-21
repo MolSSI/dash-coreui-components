@@ -19,7 +19,7 @@ Keyword arguments:
     def __init__(self, id=Component.UNDEFINED, label=Component.REQUIRED, value=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'label', 'value']
         self._type = 'firstapp'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['id', 'label', 'value']
         self.available_wildcard_properties =            []

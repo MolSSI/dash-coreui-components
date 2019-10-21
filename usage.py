@@ -253,7 +253,7 @@ app.layout = html.Div([
                                                 plot_bgcolor='white'
                                             )
                                         ),
-                                        style={'height': 400, 'width': '72rem'},
+                                        style={'height': 400, 'width': '100%'},
                                         id='my-graph'
                                     )
                                 ]),

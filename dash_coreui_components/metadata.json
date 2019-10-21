@@ -214,7 +214,7 @@
           "name": "any"
         },
         "required": false,
-        "description": "A list of dictionaries describing URL path in a human-readable way.\r\nDefaults to `[{ path: '/', name: 'Home' }]`.",
+        "description": "A list of dictionaries describing URL path in a human-readable way.\nDefaults to `[{ path: '/', name: 'Home' }]`.",
         "defaultValue": {
           "value": "[{ path: '/', name: 'Home' }]",
           "computed": false
@@ -686,7 +686,7 @@
     }
   },
   "src/lib/components/approuteconditional.react.js": {
-    "description": "Route conditional component.\r\n\nThis component (and its children) are only visible if the browser's current URL matches its route prop.\r\nThis provides a light-weight client-side alternative to the server-side routing described in https://dash.plot.ly/urls.",
+    "description": "Route conditional component.\n\nThis component (and its children) are only visible if the browser's current URL matches its route prop.\nThis provides a light-weight client-side alternative to the server-side routing described in https://dash.plot.ly/urls.",
     "displayName": "approuteconditional",
     "methods": [
       {
@@ -1114,7 +1114,7 @@
     }
   },
   "src/lib/components/appsidebarnav.react.js": {
-    "description": "CoreUI sidebar nav component.\r\n\nThis component manages the location in a multi-page much as Dash Core Components `Location` component.\r\nIt is also compatible with the Dash Core Components `Link` component.\r\nSee https://dash.plot.ly/urls for details.",
+    "description": "CoreUI sidebar nav component.\n\nThis component manages the location in a multi-page much as Dash Core Components `Location` component.\nIt is also compatible with the Dash Core Components `Link` component.\nSee https://dash.plot.ly/urls for details.",
     "displayName": "appsidebarnav",
     "methods": [
       {
@@ -1430,9 +1430,9 @@
           "name": "any"
         },
         "required": false,
-        "description": "The sidebar nav config, used to configure the contents of this sidebar nav.\r\nAlternatively, you can add children manually, which will cause this prop to be ignored.\r\nA sidebar nav config object has the following structure:\r\n- title:\r\n````js\r\n{\r\n  title: true,\r\n  name: 'Theme',\r\n  class: ''              // optional class names space delimited list for title item ex: \"text-center\"\r\n  wrapper: {             // optional wrapper object\r\n    element: '',         // optional* valid HTML5 element tag ( *required when passing attributes)\r\n    attributes: {}       // optional valid JS object with JS API naming ex: { className: \"my-class\", style: { fontFamily: \"Verdana\" }, id: \"my-id\"}\r\n  },\r\n},\r\n````\r\n- item:\r\n````js\r\n{\r\n  name: 'Dashboard',\r\n  url: '/dashboard',\r\n  icon: `icon-speedometer',\r\n  class: '',                    // optional\r\n  variant: 'success',           // optional\r\n  badge: {\r\n    variant: 'info',\r\n    text: 'NEW',\r\n    class: ''                   // optional\r\n  },\r\n  attributes: { target: '_blank', rel: \"noreferrer noopener\", disabled: false, hidden: false }, // (v2.1.0 up) optional valid JS object with JS API naming\r\n},\r\n````\r\n- item with `children` array - works like `nav-dropdown-toggle` with `nav-dropdown-items`\r\n````js\r\n{\r\n  name: 'Icons',\r\n  url: '/icons',\r\n  icon: 'icon-star',\r\n  children: [\r\n    {\r\n      name: 'Flags',     // item options apply\r\n      url: '/icons/flags',\r\n      icon: 'icon-star',\r\n      badge: {\r\n        variant: 'success',\r\n        text: 'NEW'\r\n      }\r\n    },\r\n  ]\r\n}\r\n````\r\n- divider:\r\n````js\r\n{\r\n  divider: true\r\n},\r\n````\r\n\r\n- order of precedence:\r\n````\r\ntitle > divider > children > item\r\n````",
+        "description": "The sidebar nav config, used to configure the contents of this sidebar nav.\nAlternatively, you can add children manually, which will cause this prop to be ignored.\nA sidebar nav config object has the following structure:\n- title:\n````js\n{\n  title: true,\n  name: 'Theme',\n  class: ''              // optional class names space delimited list for title item ex: \"text-center\"\n  wrapper: {             // optional wrapper object\n    element: '',         // optional* valid HTML5 element tag ( *required when passing attributes)\n    attributes: {}       // optional valid JS object with JS API naming ex: { className: \"my-class\", style: { fontFamily: \"Verdana\" }, id: \"my-id\"}\n  },\n},\n````\n- item:\n````js\n{\n  name: 'Dashboard',\n  url: '/dashboard',\n  icon: `icon-speedometer',\n  class: '',                    // optional\n  variant: 'success',           // optional\n  badge: {\n    variant: 'info',\n    text: 'NEW',\n    class: ''                   // optional\n  },\n  attributes: { target: '_blank', rel: \"noreferrer noopener\", disabled: false, hidden: false }, // (v2.1.0 up) optional valid JS object with JS API naming\n},\n````\n- item with `children` array - works like `nav-dropdown-toggle` with `nav-dropdown-items`\n````js\n{\n  name: 'Icons',\n  url: '/icons',\n  icon: 'icon-star',\n  children: [\n    {\n      name: 'Flags',     // item options apply\n      url: '/icons/flags',\n      icon: 'icon-star',\n      badge: {\n        variant: 'success',\n        text: 'NEW'\n      }\n    },\n  ]\n}\n````\n- divider:\n````js\n{\n  divider: true\n},\n````\n\n- order of precedence:\n````\ntitle > divider > children > item\n````",
         "defaultValue": {
-          "value": "{\r\n  items: [\r\n    {\r\n      name: 'Dashboard',\r\n      url: '/dashboard',\r\n      icon: 'cui-speedometer icons',\r\n      badge: { variant: 'info', text: 'NEW' }\r\n    }]\r\n}",
+          "value": "{\n  items: [\n    {\n      name: 'Dashboard',\n      url: '/dashboard',\n      icon: 'cui-speedometer icons',\n      badge: { variant: 'info', text: 'NEW' }\n    }]\n}",
           "computed": false
         }
       },
@@ -1730,7 +1730,7 @@
     }
   },
   "src/lib/components/firstapp.react.js": {
-    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "appheader",
     "methods": [],
     "props": {
@@ -1760,7 +1760,7 @@
           "name": "func"
         },
         "required": false,
-        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
       }
     }
   }

@@ -19,7 +19,7 @@ Keyword arguments:
     def __init__(self, children=None, tag=Component.UNDEFINED, id=Component.UNDEFINED, className=Component.UNDEFINED, brand=Component.UNDEFINED, full=Component.UNDEFINED, minimized=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'tag', 'id', 'className', 'brand', 'full', 'minimized']
         self._type = 'appnavbarbrand'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['children', 'tag', 'id', 'className', 'brand', 'full', 'minimized']
         self.available_wildcard_properties =            []

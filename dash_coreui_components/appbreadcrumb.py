@@ -18,7 +18,7 @@ Defaults to `[{ path: '/', name: 'Home' }]`.
     def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, appRoutes=Component.UNDEFINED, tag=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'className', 'appRoutes', 'tag']
         self._type = 'appbreadcrumb'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['children', 'id', 'className', 'appRoutes', 'tag']
         self.available_wildcard_properties =            []

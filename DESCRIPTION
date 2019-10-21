@@ -1,4 +1,4 @@
-Package: dash_coreui_components
+Package: dashCoreuiComponents
 Title: CoreUI components for Plotly Dash
 Version: 0.0.1
 Authors @R: as.person(c(yuwei <yuweix@vt.edu>))

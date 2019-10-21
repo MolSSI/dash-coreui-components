@@ -23,7 +23,7 @@ Keyword arguments:
     def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, compact=Component.UNDEFINED, display=Component.UNDEFINED, fixed=Component.UNDEFINED, minimized=Component.UNDEFINED, isOpen=Component.UNDEFINED, offCanvas=Component.UNDEFINED, staticContext=Component.UNDEFINED, tag=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'className', 'compact', 'display', 'fixed', 'minimized', 'isOpen', 'offCanvas', 'staticContext', 'tag']
         self._type = 'appsidebar'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['children', 'id', 'className', 'compact', 'display', 'fixed', 'minimized', 'isOpen', 'offCanvas', 'staticContext', 'tag']
         self.available_wildcard_properties =            []

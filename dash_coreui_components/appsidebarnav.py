@@ -97,7 +97,7 @@ title > divider > children > item
     def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, pathname=Component.UNDEFINED, search=Component.UNDEFINED, hash=Component.UNDEFINED, href=Component.UNDEFINED, refresh=Component.UNDEFINED, navConfig=Component.UNDEFINED, navFunc=Component.UNDEFINED, isOpen=Component.UNDEFINED, staticContext=Component.UNDEFINED, tag=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'className', 'pathname', 'search', 'hash', 'href', 'refresh', 'navConfig', 'navFunc', 'isOpen', 'staticContext', 'tag']
         self._type = 'appsidebarnav'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['children', 'id', 'className', 'pathname', 'search', 'hash', 'href', 'refresh', 'navConfig', 'navFunc', 'isOpen', 'staticContext', 'tag']
         self.available_wildcard_properties =            []

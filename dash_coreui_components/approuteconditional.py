@@ -20,7 +20,7 @@ Keyword arguments:
     def __init__(self, children=None, id=Component.UNDEFINED, route=Component.REQUIRED, className=Component.UNDEFINED, tag=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'route', 'className', 'tag']
         self._type = 'approuteconditional'
-        self._namespace = 'dcc'
+        self._namespace = 'dash_coreui_components'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['children', 'id', 'route', 'className', 'tag']
         self.available_wildcard_properties =            []

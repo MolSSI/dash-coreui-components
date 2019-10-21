@@ -31,12 +31,12 @@ _this_module = _sys.modules[__name__]
 
 _js_dist = [
     {
-        'relative_package_path': 'dcc.min.js',
+        'relative_package_path': 'dash_coreui_components.min.js',
         
         'namespace': package_name
     },
     {
-        'relative_package_path': 'dcc.min.js.map',
+        'relative_package_path': 'dash_coreui_components.min.js.map',
         
         'namespace': package_name
     }

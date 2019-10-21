@@ -8,9 +8,10 @@
     "validate-init": "python _validate_init.py",
     "prepublish": "npm run validate-init",
     "build:js": "webpack --mode production",
+    "build:py": "dash-generate-components ./src/lib/components dash_coreui_components -p package-info.json",
     "build:py_and_r": "dash-generate-components ./src/lib/components dash_coreui_components -p package-info.json --r-prefix ''",
     "build:py_and_r-activated": "(. venv/bin/activate || venv\\scripts\\activate && npm run build:py_and_r)",
-    "build": "npm run build:js && npm run build:py_and_r",
+    "build": "npm run build:js && npm run build:py",
     "build:activated": "npm run build:js && npm run build:py_and_r-activated"
   },
   "author": "yuwei <yuweix@vt.edu>",
@@ -43,9 +44,9 @@
     "react": "^16.8.6",
     "react-docgen": "^4.1.1",
     "react-dom": "^16.8.6",
-    "styled-jsx": "^3.2.1",
     "style-loader": "^0.23.1",
-    "webpack": "4.36.1",
+    "styled-jsx": "^3.2.1",
+    "webpack": "^4.36.1",
     "webpack-cli": "3.3.6",
     "webpack-serve": "3.1.0"
   },
