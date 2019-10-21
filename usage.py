@@ -1,13 +1,14 @@
-import dcc
 import dash
-from dash.dependencies import Input, Output
-import dash_html_components as html
-import dash_bootstrap_components as dbc
 import dash_core_components as core
-import plotly.graph_objs as go
+import dash_html_components as html
 import dash_table
 import numpy as np
 import pandas as pd
+import plotly.graph_objs as go
+from dash.dependencies import Input, Output
+
+import dash_bootstrap_components as dbc
+import dash_coreui_components as coreui
 
 app = dash.Dash(__name__)
 app.scripts.config.serve_locally = True
@@ -56,13 +57,13 @@ data3 = [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65,
 df = pd.read_csv('./table1.csv')
 
 app.layout = html.Div([
-    dcc.appheader(
+    coreui.appheader(
         [
-            dcc.appnavbarbrand(
+            coreui.appnavbarbrand(
             full={'src': '/assets/images/logo.svg', 'width': 89, 'height': 25, 'alt': 'CoreUI Logo'},
             minimized={'src': '/assets/images/sygnet.svg', 'width': 30, 'height': 30, 'alt': 'CoreUI Logo'}
             ),
-            dcc.appsidebartoggler(id='appsidebartogglermd', className='d-md-down-none', display='lg'),
+            coreui.appsidebartoggler(id='appsidebartogglermd', className='d-md-down-none', display='lg'),
             # dbc.Nav([
             #     dbc.NavItem(
             #         dbc.NavLink([html.I(className='cui-bell icons font-xl d-block'), dbc.Badge('5', pill=True, color='danger')], href='#'),
@@ -77,16 +78,16 @@ app.layout = html.Div([
             #         className='d-md-down-none'
             #     ),
             # ], className='ml-auto', navbar=True),
-            # dcc.appasidetoggler(id='appasidetogglermd', className='d-md-down-none'),
-            # dcc.appasidetoggler(id='appasidetogglerlg', className='d-lg-none', mobile=True)
+            # coreui.appasidetoggler(id='appasidetogglermd', className='d-md-down-none'),
+            # coreui.appasidetoggler(id='appasidetogglerlg', className='d-lg-none', mobile=True)
         ],        
     	fixed=True
     ),
     html.Div([
-        dcc.appsidebar([
-            dcc.appsidebarheader(),
-            dcc.appsidebarform(),
-            dcc.appsidebarnav(id='current-url', navConfig={
+        coreui.appsidebar([
+            coreui.appsidebarheader(),
+            coreui.appsidebarform(),
+            coreui.appsidebarnav(id='current-url', navConfig={
                 'items': [
                     {
                         'name': 'Dashboard',
@@ -154,16 +155,16 @@ app.layout = html.Div([
                     }
                 ]
             }),
-            dcc.appsidebarfooter()
+            coreui.appsidebarfooter()
             ], fixed=True, display='lg'),
    
         html.Main([
-            dcc.appbreadcrumb(appRoutes=[{'path': '/', 'name': 'Dashboard'}]),
+            coreui.appbreadcrumb(appRoutes=[{'path': '/', 'name': 'Dashboard'}]),
             dbc.Container([
-                dcc.approuteconditional([
+                coreui.approuteconditional([
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Card Title"),
                                 dbc.CardBody(
                                         [
@@ -178,7 +179,7 @@ app.layout = html.Div([
                                 ], style={"width": "18rem"}, className="bg-warning"), className="col-sm-6 col-md-3"
                             ),
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Card Title"),
                                 dbc.CardBody(
                                         [
@@ -192,7 +193,7 @@ app.layout = html.Div([
                                 ], style={'width': '18rem'}, className="bg-info"), className="col-sm-6 col-md-3"
                             ),
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Card Title"),
                                 dbc.CardBody(
                                         [
@@ -206,7 +207,7 @@ app.layout = html.Div([
                                 ], style={'width': '18rem'}, className="bg-success"), className="col-sm-6 col-md-3"
                             ),                       
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Card Title"),
                                 dbc.CardBody(
                                         [
@@ -224,13 +225,13 @@ app.layout = html.Div([
 
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader([
                                      html.Div("Traffic"),
                                      html.Div("November 2017", className="small text-muted")
                                     ]),
                                 dbc.CardBody([
-                                    #dcc.applinechart(id='chart1', className='chart-wrapper', style={'height':'300px', 'margin-top':'40px'})
+                                    #coreui.applinechart(id='chart1', className='chart-wrapper', style={'height':'300px', 'margin-top':'40px'})
                                     core.Graph(
                                         figure = go.Figure(
                                             data = [
@@ -262,7 +263,7 @@ app.layout = html.Div([
 
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Striped Table"),
                                 dbc.CardBody([
                                         html.Table([
@@ -333,7 +334,7 @@ app.layout = html.Div([
 
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Striped Table"),
                                 dbc.CardBody([
                                     dbc.Table.from_dataframe(df, striped=True, bordered=True, hover=True),                                   
@@ -345,41 +346,41 @@ app.layout = html.Div([
 
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Striped Table"),
                                 dbc.CardBody([ 
                                     html.Table([
-                                        dcc.apptableheader(data=list(df.columns.values)),
+                                        coreui.apptableheader(data=list(df.columns.values)),
                                         html.Tbody([
-                                            dcc.apptablebody([
+                                            coreui.apptablebody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Active")
                                                     ], className="badge badge-success")
                                                 ]),
                                             ], data=df.iloc[0:1, 0:3].values.tolist()),
-                                            dcc.apptablebody([
+                                            coreui.apptablebody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Banned")
                                                     ], className="badge badge-danger")
                                                 ]),
                                             ], data=df.iloc[1:2, 0:3].values.tolist()),
-                                            dcc.apptablebody([
+                                            coreui.apptablebody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Inactive")
                                                     ], className="badge badge-secondary")
                                                 ]),
                                             ], data=df.iloc[2:3, 0:3].values.tolist()),
-                                            dcc.apptablebody([
+                                            coreui.apptablebody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Pending")
                                                     ], className="badge badge-warning")
                                                 ]),
                                             ], data=df.iloc[3:4, 0:3].values.tolist()),
-                                            dcc.apptablebody([
+                                            coreui.apptablebody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Active")
@@ -397,10 +398,10 @@ app.layout = html.Div([
                     
                     ], id='dashcard', route='/'),
 
-                dcc.approuteconditional([
+                coreui.approuteconditional([
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Card Title"),
                                 dbc.CardBody(
                                         [
@@ -415,7 +416,7 @@ app.layout = html.Div([
                                 ], style={"width": "25rem"})
                             ),
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardBody(
                                         [
                                             html.P(
@@ -429,7 +430,7 @@ app.layout = html.Div([
                                 ], style={'width': '25rem'})
                             ),
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardBody(
                                         [
                                             html.P(
@@ -447,8 +448,8 @@ app.layout = html.Div([
 
                     ], id='card', route='/base/card'),
 
-                dcc.approuteconditional([
-                    dcc.appcard([
+                coreui.approuteconditional([
+                    coreui.appcard([
                             dbc.CardHeader("Standard Buttons"),
                             dbc.CardBody(
                                     [
@@ -470,8 +471,8 @@ app.layout = html.Div([
                             ])
                 ], id='buttons', route='/buttons'),
 
-                dcc.approuteconditional([
-                    dcc.appcard([
+                coreui.approuteconditional([
+                    coreui.appcard([
                             dbc.CardHeader("Credit Card"),
                             dbc.CardBody(
                                     [
@@ -539,10 +540,10 @@ app.layout = html.Div([
                             ])
                 ], id='forms', route='/forms'),
 
-                dcc.approuteconditional([
+                coreui.approuteconditional([
                     dbc.Row([
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                 dbc.CardHeader("Striped Table"),
                                 dbc.CardBody([
                                         html.Table([
@@ -609,7 +610,7 @@ app.layout = html.Div([
                             ])
                         ),
                         dbc.Col(
-                            dcc.appcard([
+                            coreui.appcard([
                                     dbc.CardHeader("Simple Table"),
                                     dbc.CardBody([
                                         html.Table([
@@ -677,14 +678,14 @@ app.layout = html.Div([
                             )
                     ])
                 ], id='tables', route='/tables')                
-                    #dcc.approuteconditional(id='approuteconditional', route='/', children=dashboard_layout)
-                    #dcc.approuteconditional(id='approuteconditional', route='/charts', children=charts_layout)
-                    #dcc.approuteconditional(route='/other/animals', children=other_animals_layout)
+                    #coreui.approuteconditional(id='approuteconditional', route='/', children=dashboard_layout)
+                    #coreui.approuteconditional(id='approuteconditional', route='/charts', children=charts_layout)
+                    #coreui.approuteconditional(route='/other/animals', children=other_animals_layout)
                 ], id='page-content', fluid=True)
             ], className='main')
         ], className='app-body'),
  #   html.Div(id='output'),
-    dcc.appfooter(
+    coreui.appfooter(
     )
 ], className='app')
 

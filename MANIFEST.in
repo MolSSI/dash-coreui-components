@@ -1,7 +1,7 @@
-include dcc/dcc.min.js
-include dcc/dcc.min.js.map
-include dcc/metadata.json
-include dcc/package-info.json
+include dash_coreui_components/dash_coreui_components.min.js
+include dash_coreui_components/dash_coreui_components.min.js.map
+include dash_coreui_components/metadata.json
+include dash_coreui_components/package-info.json
 include README.md
 include LICENSE
 include package.json

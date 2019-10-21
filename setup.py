@@ -3,7 +3,7 @@ import os
 from setuptools import setup
 
 
-with open(os.path.join('dcc', 'package.json')) as f:
+with open(os.path.join('dash_coreui_components', 'package.json')) as f:
     package = json.load(f)
 
 package_name = package["name"].replace(" ", "_").replace("-", "_")

@@ -9,7 +9,7 @@ import sys
 import importlib
 
 
-components_package = 'dcc'
+components_package = 'dash_coreui_components'
 
 components_lib = importlib.import_module(components_package)
 
