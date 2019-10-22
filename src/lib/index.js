@@ -1,38 +1,38 @@
 /* eslint-disable import/prefer-default-export */
-import appheader from './components/appheader.react';
-import appfooter from './components/appfooter.react';
-import appsidebartoggler from './components/appsidebartoggler.react';
-import appnavbarbrand from './components/appnavbarbrand.react';
-import appheaderdropdown from './components/appheaderdropdown.react';
-import appasidetoggler from './components/appasidetoggler.react';
-import appsidebar from './components/appsidebar.react';
-import appsidebarheader from './components/appsidebarheader.react';
-import appsidebarform from './components/appsidebarform.react';
-import appsidebarnav from './components/appsidebarnav.react';
-import appsidebarfooter from './components/appsidebarfooter.react';
-import appbreadcrumb from './components/appbreadcrumb.react';
-import approuteconditional from './components/approuteconditional.react';
-import appcard from './components/appcard.react';
-import applinechart from './components/applinechart.react';
-import apptableheader from './components/apptableheader.react';
-import apptablebody from './components/apptablebody.react';
+import AppHeader from './components/AppHeader.react';
+import AppFooter from './components/AppFooter.react';
+import AppSidebarToggler from './components/AppSidebartoggler.react';
+import AppNavbarBrand from './components/AppNavbarBrand.react';
+import AppHeaderDropdown from './components/AppHeaderdropdown.react';
+import AppAsideToggler from './components/AppAsideToggler.react';
+import AppSidebar from './components/AppSidebar.react';
+import AppSidebarHeader from './components/AppSidebarheader.react';
+import AppSidebarForm from './components/AppSidebarform.react';
+import AppSidebarNav from './components/AppSidebarnav.react';
+import AppSidebarFooter from './components/AppSidebarfooter.react';
+import AppBreadcrumb from './components/AppBreadcrumb.react';
+import AppRouteConditional from './components/AppRouteConditional.react';
+import AppCard from './components/AppCard.react';
+import AppLineChart from './components/AppLineChart.react';
+import AppTableHeader from './components/AppTableHeader.react';
+import AppTablebody from './components/AppTablebody.react';
 
 export {
-    appheader,
-    appfooter,
-    appsidebartoggler,
-    appnavbarbrand,
-    appheaderdropdown,
-    appasidetoggler,
-    appsidebar,
-    appsidebarheader,
-    appsidebarform,
-    appsidebarnav,
-    appsidebarfooter,
-    appbreadcrumb,
-    approuteconditional,
-    appcard,
-    applinechart,
-    apptableheader,
-    apptablebody
+    AppHeader,
+    AppFooter,
+    AppSidebarToggler,
+    AppNavbarBrand,
+    AppHeaderDropdown,
+    AppAsideToggler,
+    AppSidebar,
+    AppSidebarHeader,
+    AppSidebarForm,
+    AppSidebarNav,
+    AppSidebarFooter,
+    AppBreadcrumb,
+    AppRouteConditional,
+    AppCard,
+    AppLineChart,
+    AppTableHeader,
+    AppTablebody
 };

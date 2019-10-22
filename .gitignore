@@ -274,7 +274,7 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 # Ignore builds
-dash_coreui_components/app*py
+dash_coreui_components/App*py
 dash_coreui_components/*.js*
 dash_coreui_components/package-info.json
 dash_coreui_components/_imports_.py
