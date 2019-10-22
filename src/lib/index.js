@@ -1,7 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import appheader from './components/appheader.react';
 import appfooter from './components/appfooter.react';
-import firstapp from './components/firstapp.react';
 import appsidebartoggler from './components/appsidebartoggler.react';
 import appnavbarbrand from './components/appnavbarbrand.react';
 import appheaderdropdown from './components/appheaderdropdown.react';
@@ -21,7 +20,6 @@ import apptablebody from './components/apptablebody.react';
 export {
     appheader,
     appfooter,
-    firstapp,
     appsidebartoggler,
     appnavbarbrand,
     appheaderdropdown,
