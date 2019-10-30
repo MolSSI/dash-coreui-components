@@ -358,35 +358,35 @@ app.layout = html.Div([
                                     html.Table([
                                         coreui.AppTableHeader(data=list(df.columns.values)),
                                         html.Tbody([
-                                            coreui.AppTablebody([
+                                            coreui.AppTableBody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Active")
                                                     ], className="badge badge-success")
                                                 ]),
                                             ], data=df.iloc[0:1, 0:3].values.tolist()),
-                                            coreui.AppTablebody([
+                                            coreui.AppTableBody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Banned")
                                                     ], className="badge badge-danger")
                                                 ]),
                                             ], data=df.iloc[1:2, 0:3].values.tolist()),
-                                            coreui.AppTablebody([
+                                            coreui.AppTableBody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Inactive")
                                                     ], className="badge badge-secondary")
                                                 ]),
                                             ], data=df.iloc[2:3, 0:3].values.tolist()),
-                                            coreui.AppTablebody([
+                                            coreui.AppTableBody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Pending")
                                                     ], className="badge badge-warning")
                                                 ]),
                                             ], data=df.iloc[3:4, 0:3].values.tolist()),
-                                            coreui.AppTablebody([
+                                            coreui.AppTableBody([
                                                 html.Td([
                                                     html.Span([
                                                     html.Div("Active")

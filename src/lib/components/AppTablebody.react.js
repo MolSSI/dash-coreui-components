@@ -4,18 +4,35 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
 
-	 children: PropTypes.node,
-
-	 id: PropTypes.string,
-
-	 className: PropTypes.string,
-
-	 tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-
-	 style: PropTypes.object,
-
-	 data: PropTypes.any
-
+  /**
+    * The children
+   */
+  children: PropTypes.node,
+ 
+  /**
+   * The ID used to identify this component in Dash callbacks, defaults to `AppTableBody`.
+   */
+  id: PropTypes.string,
+ 
+  /**
+   * The CSS class name, defaults to `apptablebody`.
+   */
+  className: PropTypes.string,
+ 
+  /**
+   * The HTML tag.
+   */
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+ 
+  /**
+   * The CSS style.
+   */
+  style: PropTypes.object,
+ 
+  /**
+   * The Data.
+   */
+  data: PropTypes.any
 
 }
 
@@ -24,7 +41,10 @@ const defaultProps = {
 	tag: 'tr'
 }
 
-class AppTablebody extends Component {
+/**
+ * CoreUI apptablebody component.
+ */
+class AppTableBody extends Component {
 	render() {
 		const { id, className, children, tag: Tag, data, ...attributes } = this.props;
 
@@ -53,7 +73,7 @@ class AppTablebody extends Component {
 	}
 }
 
-AppTablebody.propTypes = propTypes;
-AppTablebody.defaultProps = defaultProps;
+AppTableBody.propTypes = propTypes;
+AppTableBody.defaultProps = defaultProps;
 
-export default AppTablebody;
+export default AppTableBody;

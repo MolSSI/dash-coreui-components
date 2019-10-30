@@ -14,7 +14,7 @@
     "build:activated": "npm run build:js && npm run build:py_and_r-activated"
   },
   "author": "The QCArchive Developers <qcarchive@molssi.org>",
-  "license": "BSD-3C",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
