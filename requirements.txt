@@ -1,4 +1,5 @@
 # dash is required to call `build:py`
 dash>=1.0.2
+dash-bootstrap-components
 # Add pyaml
 pyaml

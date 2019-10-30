@@ -26,6 +26,7 @@ before_script:
 
 script:
   - python -c "import dash_coreui_components"
+  - npm run validate-build
 
 notifications:
   email: false
