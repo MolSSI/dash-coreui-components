@@ -1,0 +1,32 @@
+sudo: false
+dist: xenial
+
+language: python
+os: linux
+
+matrix:
+  include:
+    - python: 3.6
+    - python: 3.7
+
+before_install:
+  # Additional info about the build
+  - uname -a
+  - free -m
+  - df -h
+  - ulimit -a
+
+install:
+  - pip install dash[dev] dash-bootstrap-components
+  - npm install
+
+before_script:
+  - npm run build
+  - pip install -e .
+
+script:
+  - python -c "import dash_coreui_components"
+
+notifications:
+  email: false
+
