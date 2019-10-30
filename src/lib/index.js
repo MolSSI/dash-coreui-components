@@ -14,7 +14,7 @@ import AppBreadcrumb from './components/AppBreadcrumb.react';
 import AppRouteConditional from './components/AppRouteConditional.react';
 import AppCard from './components/AppCard.react';
 import AppTableHeader from './components/AppTableHeader.react';
-import AppTablebody from './components/AppTablebody.react';
+import AppTableBody from './components/AppTableBody.react';
 
 export {
     AppHeader,
@@ -32,5 +32,5 @@ export {
     AppRouteConditional,
     AppCard,
     AppTableHeader,
-    AppTablebody
+    AppTableBody
 };
