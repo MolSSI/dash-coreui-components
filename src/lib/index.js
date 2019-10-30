@@ -13,7 +13,6 @@ import AppSidebarFooter from './components/AppSidebarFooter.react';
 import AppBreadcrumb from './components/AppBreadcrumb.react';
 import AppRouteConditional from './components/AppRouteConditional.react';
 import AppCard from './components/AppCard.react';
-import AppLineChart from './components/AppLineChart.react';
 import AppTableHeader from './components/AppTableHeader.react';
 import AppTablebody from './components/AppTablebody.react';
 
@@ -32,7 +31,6 @@ export {
     AppBreadcrumb,
     AppRouteConditional,
     AppCard,
-    AppLineChart,
     AppTableHeader,
     AppTablebody
 };
